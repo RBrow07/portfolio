@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Movies Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i0.wp.com/wallpaperaccess.com/full/4426169.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, p {
+            font-family: 'Comic Sans MS', sans-serif; 
+            color: #4B0082;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 5px;
+            display: inline-block;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(249, 244, 244, 0.9); 
+            border: 2px solid #4B0082;
+            border-radius: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid #4B0082;
+            border-radius: 5px;
+        }
+        button {
+            background-color: indigo;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">90s Movie Survey Form</h1>
+    <p id="description">Let’s take you back to the 90s! Tell us about yourself and your favorite throwbacks.</p>
+
+    <form id="survey-form">
+        
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Your 90s-inspired nickname" required>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your AOL email" required>
+    
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Age (from the 90s or not!)" min="18" max="100" required>
+        
+        <label for="dropdown">Which 90s character describes you best?</label>
+        <select id="dropdown" required>
+            <option value="">Choose a character</option>
+            <option value="Cher">Cher (Clueless)</option>
+            <option value="Neo">Neo (The Matrix)</option>
+            <option value="Buzz Lightyear">Buzz Lightyear (Toy Story)</option>
+            <option value="Mulan">Mulan (Mulan)</option>
+        </select>
+
+        <fieldset>
+            <legend>How did you find out about this survey?</legend>
+            <input type="radio" id="blockbuster" name="referral" value="blockbuster">
+            <label for="blockbuster">Browsing at Blockbuster</label>
+            <input type="radio" id="video-store" name="referral" value="video-store">
+            <label for="video-store">Friend at the Video Store</label>
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Which 90s movies are you into?</legend>
+            <input type="checkbox" id="service1" name="services" value="service1">
+            <label for="service1">Jurassic Park</label>
+            <input type="checkbox" id="service2" name="services" value="service2">
+            <label for="service2">Titanic</label>
+            <input type="checkbox" id="service3" name="services" value="service3">
+            <label for="service3">The Matrix</label>
+            <input type="checkbox" id="service4" name="services" value="service4">
+            <label for="service4">Office Space</label>
+        </fieldset>
+ 
+        <label for="comments">Your Favorite 90s Memory</label>
+        <textarea id="comments" placeholder="Tell us your best 90s memory: Y2K party, Blockbuster night, etc."></textarea>
+
+        <button type="submit" id="submit">Submit to the Past!</button>
+
+    </form>
+
+</body>
+</html>

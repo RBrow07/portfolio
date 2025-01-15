@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World Online - Virtual Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            background-color: #333;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4caf50;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2em;
+            background-image: url('https://example.com/hero-image.jpg'); 
+            background-size: cover;
+            color: rgb(27, 15, 15);
+        }
+
+        .content {
+            padding: 2em;
+        }
+
+        .section {
+            margin-bottom: 2em;
+        }
+
+        .popular-destinations, .kids-fun {
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 calc(33% - 1em);
+            max-width: calc(33% - 1em);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 0;
+            padding: 1em;
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .card p {
+            padding: 1em;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .cta button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(100% - 1em);
+                max-width: calc(100% - 1em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World Online</h1>
+        <p>Your gateway to virtual adventures without the crowds or costs!</p>
+    </header>
+
+    <nav>
+        <a href="#destinations">Popular Destinations</a>
+        <a href="#kids-fun">Fun for Kids</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Travel Virtually Anywhere</h2>
+        <p>Experience breathtaking locations and unique adventures from the comfort of your home.</p>
+    </section>
+
+    <div class="content">
+        <section id="destinations" class="section">
+            <h2>Popular Destinations</h2>
+            <div class="popular-destinations">
+                <div class="card">
+                    <img src="https://example.com/paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>Explore the City of Lights, from the Eiffel Tower to the Louvre, virtually and hassle-free!</p>
+                </div>
+                <div class="card">
+                    <img src="https://example.com/maldives.jpg" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <p>Relax on pristine beaches and enjoy underwater adventures without leaving home.</p>
+                </div>
+                <div class="card">
+                    <img src="https://example.com/tokyo.jpg" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                    <p>Dive into the vibrant streets of Tokyo and experience Japanese culture online.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kids-fun" class="section">
+            <h2>Fun for Kids</h2>
+            <p>Discover activities and educational experiences designed just for kids:</p>
+            <div class="kids-fun">
+                <div class="card">
+                    <img src="https://example.com/virtual-zoo.jpg" alt="Virtual Zoo">
+                    <h3>Virtual Zoo</h3>
+                    <p>Watch live animal cams and learn about wildlife around the world.</p>
+                </div>
+                <div class="card">
+                    <img src="https://example.com/space-mission.jpg" alt="Space Mission">
+                    <h3>Space Mission</h3>
+                    <p>Take a virtual journey through the cosmos with interactive space tours.</p>
+                </div>
+                <div class="card">
+                    <img src="https://example.com/ancient-egypt.jpg" alt="Ancient Egypt">
+                    <h3>Ancient Egypt</h3>
+                    <p>Explore pyramids and learn about pharaohs and mummies through virtual adventures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>We are an online travel service dedicated to bringing the world to you. Whether it's iconic landmarks or kid-friendly activities, our platform ensures a fun and enriching experience for all ages without the hassle of travel logistics or costs.</p>
+            <h3>What Makes Us Special</h3>
+            <ul>
+                <li>Access to world-class destinations from your home</li>
+                <li>Fun, educational activities for kids</li>
+                <li>No expensive travel costs or crowded tourist spots</li>
+                <li>High-quality virtual experiences for everyone</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <h2>Start Your Adventure Now!</h2>
+            <p>Click below to begin exploring the world's most iconic destinations and unique activities today.</p>
+            <button onclick="location.href='https://example.com/sign-up';">Get Started</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Explore the World Online. All rights reserved.</p>
+    </footer>
+</body>
+</html>
